@@ -4,6 +4,11 @@
 	color: #bcbcbc!important;
 }
 
+.openerp.oe_blockui_spin_container
+{
+	background: transparent!important;
+}
+
 .label
 {
 	border-radius: 0!important;
@@ -137,6 +142,12 @@
 .openerp .oe_list_content > tbody > tr:nth-child(odd)
 {
 	background-image: none!important;
+	background: #31322e!important;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th
+{
 	background: #31322e!important;
 }
 
