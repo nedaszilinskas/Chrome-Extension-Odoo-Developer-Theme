@@ -1,0 +1,349 @@
+.openerp
+{
+	background: #272823!important;
+	color: #bcbcbc!important;
+}
+
+.label
+{
+	border-radius: 0!important;
+}
+
+.openerp .oe_kanban_view.oe_background_grey > table.oe_kanban_groups
+{
+	background: #272823!important;
+}
+
+.openerp .oe_kanban_view.oe_view
+{
+	background: #272823!important;
+	color: #bcbcbc!important;
+}
+
+.openerp .oe_background_grey
+{
+	background: #272823!important;
+	color: #bcbcbc!important;
+}
+
+.openerp.openerp_webclient_container
+{
+	color: #bcbcbc!important;
+}
+
+.openerp .oe_pager_group li
+{
+	height: 23px!important;
+}
+
+.openerp .oe_application a
+{
+	color: #7C7BAD!important;
+}
+
+.openerp .oe_leftbar
+{
+	background: #31322e!important;
+	border-right: 1px solid #404040!important;
+}
+
+.openerp .nav-pills li > a
+{
+	color: #bcbcbc!important;
+}
+
+.nav > li > a:hover, .nav > li > a:focus
+{
+	color: #737373!important;
+}
+
+/*Kanban*/
+.openerp .oe_kanban_view .oe_kanban_group_title
+{
+	text-shadow: none!important;
+	color: #bcbcbc!important;
+}
+
+.openerp .oe_kanban_view .oe_kanban_color_0
+{
+	background: #292a25!important;
+}
+
+.openerp .oe_kanban_view.oe_kanban_grouped .oe_kanban_column,
+.openerp .oe_kanban_view .oe_kanban_group_header
+{
+	background: transparent!important;
+}
+
+/*List*/
+.openerp .oe_kanban_view.oe_kanban_grouped .oe_kanban_dummy_cell,
+.openerp .oe_form_sheet .oe_list
+{
+	background: #404040!important;
+}
+
+.openerp .oe_view_manager_current > .oe_view_manager_header
+{
+	background-image: none!important;
+	background: #31322e!important;
+	border-bottom: 1px solid #404040!important;
+}
+
+.openerp .oe_view_manager table.oe_view_manager_header .oe_button_group .active
+{
+	box-shadow: none!important;
+}
+
+.openerp .oe_searchview.oe_focused
+{
+	border: none!important;
+	box-shadow: none!important;
+}
+
+.openerp .oe_searchview
+{
+	background: #404040!important;
+	border: none!important;
+	box-shadow: none!important;
+}
+
+.openerp .oe_searchview .oe_searchview_unfold_drawer:before
+{
+    border-top: 5px solid #a3a3a3!important;
+}
+
+.openerp .oe_view_manager table.oe_view_manager_header .oe_header_row
+{
+	text-shadow: none!important;
+}
+
+.openerp .oe_list_content > thead
+{
+	background: #31322e!important;
+	border-top: 1px solid #404040!important;
+	border-bottom: 1px solid #404040!important;
+}
+
+.openerp thead th
+{
+	border-left: 1px solid #404040!important;
+}
+
+.openerp .oe_list_content > tbody > tr
+{
+	border: none!important;
+}
+
+.openerp .oe_list_content > tbody > tr:nth-child(odd)
+{
+	background-image: none!important;
+	background: #31322e!important;
+}
+
+.openerp .oe_list_content > tfoot
+{
+	background: #31322e!important;
+	border-top: 1px solid #404040!important;
+	border-bottom: none!important;
+}
+
+.openerp .oe_leftbar > div .oe_footer
+{
+	background: #31322e!important;
+}
+
+.openerp .oe_form_sheet
+{
+	background: #31322e!important;
+}
+
+.openerp .oe_list_content > tbody > tr[style="color: blue;"] > td.oe_list_field_cell
+{
+	color: #58d1ec!important;
+}
+
+.openerp .oe_list_content > tbody > tr[style="color: black;"] > td.oe_list_field_cell
+{
+	color: #bcbcbc!important;
+}
+
+.openerp .oe_list_content > tbody > tr[style="color: gray;"] > td.oe_list_field_cell
+{
+	color: #737373!important;
+}
+
+.openerp .oe_list_content > tbody > tr[style="color: red;"] > td.oe_list_field_cell
+{
+	color: #f30161!important;
+}
+
+/*Modal*/
+.modal-header
+{
+	border-bottom: 1px solid #404040!important;
+}
+
+.modal .modal-header button
+{
+	box-shadow: none!important;
+	color: #bcbcbc!important;
+}
+
+.modal-footer
+{
+	border-top: 1px solid #404040!important;
+}
+
+.ui-dialog .ui-dialog-title
+{
+	color: #bcbcbc!important;
+}
+
+/*Form*/
+.openerp .oe_formview
+{
+	background-color: #31322e!important;
+}
+
+.openerp .oe_application .oe_form_sheetbg
+{
+	background: #e0e0e0!important;
+}
+
+.openerp .oe_stat_button
+{
+	background: #31322e!important;
+	color: #bcbcbc!important;
+}
+
+.openerp .oe_stat_button:hover
+{
+	background: #7c7bad!important;
+	color: white!important;
+}
+
+.openerp a.button:link,
+.openerp a.button:visited,
+.openerp button,
+.openerp .oe_button,
+.openerp input[type='submit']
+{
+	box-shadow: none!important;
+}
+
+.openerp .oe_form header
+{
+	background-image: none!important;
+	background: #292a25!important;
+	border-bottom: 1px solid #404040!important;
+}
+
+.openerp ul.oe_form_status li > .label,
+.openerp ul.oe_form_status_clickable li > .label
+{
+	text-shadow: none!important;
+}
+
+.openerp ul.oe_form_status li,
+.openerp ul.oe_form_status_clickable li {
+	background-color: #31322e!important;
+	background-image: none!important;
+}
+
+.openerp ul.oe_form_status li > .arrow span,
+.openerp ul.oe_form_status_clickable li > .arrow span {
+	background: #292a25!important;
+    box-shadow: -1px 1px 2px #404040, inset -1px 1px 1px #404040!important;
+    margin-left: -10px!important;
+    width: 22px!important;
+    margin-top: 4px!important;
+    border-radius: 0!important;
+}
+
+.openerp ul.oe_form_status li.oe_active > .label,
+.openerp ul.oe_form_status_clickable li.oe_active > .label
+{
+	background: #7C7BAD!important;
+}
+
+.openerp ul.oe_form_status li:first-child > .label,
+.openerp ul.oe_form_status_clickable li:first-child > .label
+{
+	border: none!important;
+}
+
+.openerp ul.oe_form_status li.oe_active > .arrow span,
+.openerp ul.oe_form_status_clickable li.oe_active > .arrow span {
+	background: #7C7BAD!important;
+}
+
+.openerp ul.oe_form_status li,
+.openerp ul.oe_form_status_clickable li
+{
+	background: #292a25!important;
+}
+
+/*UI*/
+.ui-widget-content
+{
+	background: #31322e!important;
+	color: #bcbcbc!important;
+}
+
+.openerp .oe_notebook
+{
+	border-bottom: 1px solid #404040!important;
+}
+
+.openerp .oe_notebook > li.ui-state-active > a,
+.openerp .oe_notebook > li.ui-state-active > a:hover,
+.ui-tabs .ui-tabs-nav li.ui-tabs-active:hover
+{
+	border-color: #404040!important;
+    border-bottom-color: transparent!important;
+	background: #31322e!important;
+}
+
+.openerp .oe_notebook > li.ui-tabs-active > a
+{
+	color: #bcbcbc!important;
+}
+
+.oe_form_field.oe_form_field_many2many
+{
+	background: transparent!important;
+}
+
+.openerp a.button:link,
+.openerp a.button:visited,
+.openerp button,
+.openerp .oe_button,
+.openerp input[type='submit']
+{
+	text-shadow: none!important;
+}
+
+.openerp .oe_mail .oe_msg,
+.openerp .oe_mail .oe_msg_indented
+{
+	background: #292a25!important;
+}
+
+.openerp .oe_mail .oe_msg.oe_msg_notification
+{
+	background: #292a25!important;
+}
+
+.openerp .oe_view_manager table.oe_view_manager_header .oe_button_group .active a
+{
+	text-shadow: none!important;
+}
+
+.openerp .oe_form input[type="text"],
+.openerp .oe_form input[type="password"],
+.openerp .oe_form input[type="file"],
+.openerp .oe_form select,
+.openerp .oe_form textarea
+{
+	background: #e0e0e0!important;
+}
