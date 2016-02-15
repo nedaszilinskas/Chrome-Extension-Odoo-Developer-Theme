@@ -345,6 +345,11 @@
 	background: #292a25!important;
 }
 
+.openerp .oe_mail_wall_aside .oe_sidebar_suggestion
+{
+	background: #292a25!important;
+}
+
 .openerp .oe_view_manager table.oe_view_manager_header .oe_button_group .active a
 {
 	text-shadow: none!important;
