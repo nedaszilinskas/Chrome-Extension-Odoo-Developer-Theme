@@ -1,8 +1,8 @@
 {
-  "name": "Odoo Developer Theme",
+  "name": "Odoo v8 Developer Theme",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "Dark stylesheet for Odoo",
+  "description": "Dark stylesheet for Odoo v8",
   "homepage_url": "https://github.com/nedaszilinskas",
   "content_scripts": [
     {

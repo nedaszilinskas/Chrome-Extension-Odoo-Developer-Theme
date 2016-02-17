@@ -117,6 +117,11 @@
     border-top: 5px solid #a3a3a3!important;
 }
 
+.openerp .oe_searchview_drawer
+{
+    border-bottom: 1px solid #404040!important;
+}
+
 .openerp .oe_view_manager table.oe_view_manager_header .oe_header_row
 {
 	text-shadow: none!important;
@@ -345,6 +350,11 @@
 	background: #292a25!important;
 }
 
+.openerp .oe_mail .oe_msg .oe_msg_icons a
+{
+	text-shadow: none!important;
+}
+
 .openerp .oe_mail_wall_aside .oe_sidebar_suggestion
 {
 	background: #292a25!important;
@@ -362,4 +372,27 @@
 .openerp .oe_form textarea
 {
 	background: #e0e0e0!important;
+}
+
+/*Graph*/
+.graph_main_content th,
+.graph_main_content td:first-child,
+.graph_main_content thead
+{
+	background: #404040!important;
+	color: #bcbcbc!important;
+	border: 1px solid #31322e!important;
+}
+.graph_main_content td
+{
+	color: #bcbcbc!important;
+}
+.graph_main_content thead,
+.graph_main_content tbody td
+{
+	border: 1px solid #31322e!important;
+}
+.graph_main_content table:not(.heatmap) tr:hover td:not(:first-child)
+{
+	color: #404040!important;
 }
