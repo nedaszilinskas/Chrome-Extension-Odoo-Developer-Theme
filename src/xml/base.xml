@@ -2,7 +2,7 @@
 
 <templates id="template" xml:space="preserve">
 	<t t-name="OdooDevTheme.systray">
-	    <li class="oe_topbar_item oe_timezone_systray" title="Timezone mismatch">
+	    <li class="oe_topbar_item" title="Debug">
 	        <a href="#" class="oe_activate_debug_mode"><i class="fa fa-bug" style="color:#7C7BAD;"></i></a>
 	    </li>
 	</t>
