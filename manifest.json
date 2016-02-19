@@ -1,18 +1,24 @@
 {
-  "name": "Odoo v8 Developer Theme",
-  "version": "0.0.1",
-  "manifest_version": 2,
-  "description": "Dark stylesheet for Odoo v8",
-  "homepage_url": "https://github.com/nedaszilinskas",
-  "content_scripts": [
-    {
-      "matches": [
-        "*://*/web*"
-      ],
-      "css": [
-        "src/inject/base.css"
-      ],
-      "all_frames": true
-    }
-  ]
+    "name": "Odoo v8 Developer Theme",
+    "version": "0.1.1",
+    "manifest_version": 2,
+    "description": "Dark stylesheet for Odoo v8",
+    "homepage_url": "https://github.com/nedaszilinskas",
+    "content_scripts": [{
+        "matches": [
+            "*://*/web*"
+        ],
+        "css": [
+            "src/css/base.css"
+        ],
+        "js": [
+            "src/js/base.js"
+        ],
+        "all_frames": true,
+        "run_at": "document_end"
+    }],
+    "web_accessible_resources": [
+        "src/js/odoo.js",
+        "src/xml/base.xml"
+    ]
 }
