@@ -6,4 +6,59 @@
 	        <a href="#" class="oe_activate_debug_mode"><i class="fa fa-bug" style="color:#7C7BAD;"></i></a>
 	    </li>
 	</t>
+
+	<t t-extend="UserMenu">
+        <t t-jquery="ul[class='dropdown-menu']" t-operation="append">
+            <li class="divider"></li>
+            <li><a href="#" data-menu="add_switchuser">Add Quick Switch User</a></li>
+        </t>
+	</t>
+
+	<t t-name="UserMenu.SwitchUser">
+		<li>
+			<a href="#" t-att-data-password="widget.password" t-att-data-login="widget.login">
+				<span t-esc="widget.login"></span>  
+				<span class="removeswitchuser" style="font-size: 80%;color:#7C7BAD;">[remove]</span>
+			</a>
+		</li>
+	</t>
+
+	<t t-name="UserMenu.AddSwitchUser">
+        <div class="oe_formview oe_view oe_form_editable">
+	        <div class="oe_form_container">
+		        <div class="oe_form">
+			        <div class="oe_form_sheetbg">
+			        	<table border="0" cellpadding="0" cellspacing="0" class="oe_form_group">
+					        <tbody>
+					            <tr class="oe_form_group_row">
+					                <td class="oe_form_group_cell oe_form_group_cell_label" colspan="1" width="1%">
+					                    <label class="oe_form_label_help oe_align_right" for="login" title="">Login</label>
+					                </td>
+					                <td class="oe_form_group_cell" colspan="1" width="99%">
+					                    <div>
+					                        <span class="oe_form_field oe_form_field_char">
+					                        	<input id="login" type="text"/>
+					                        </span>
+					                    </div>
+					                </td>
+					            </tr>
+					            <tr class="oe_form_group_row">
+					                <td class="oe_form_group_cell oe_form_group_cell_label" colspan="1" width="1%">
+					                    <label class="oe_form_label_help oe_align_right" for="password" title="">Password</label>
+					                </td>
+					                <td class="oe_form_group_cell" colspan="1" width="99%">
+					                    <div>
+					                        <span class="oe_form_field oe_form_field_char">
+					                        	<input id="password" type="password"/>
+					                        </span>
+					                    </div>
+					                </td>
+					            </tr>
+					        </tbody>
+					    </table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</t>
 </templates>
