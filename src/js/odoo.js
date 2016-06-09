@@ -73,9 +73,9 @@
             var modal = new openerp.web.Dialog(this, {
                 size: 'medium',
                 dialogClass: 'oe_act_window',
-                title: _t("Add Quick Switch User"),
+                title: "Add Quick Switch User",
                 buttons: [{
-                    'text': _t('Save'),
+                    'text': 'Save',
                     'oe_link_class': 'oe_highlight',
                     'click': function() {
                         var login = $(this).find('#login').val();
@@ -110,9 +110,9 @@
             var modal = new openerp.web.Dialog(this, {
                 size: 'medium',
                 dialogClass: 'oe_act_window',
-                title: _t("Users Storage"),
+                title: "Users Storage",
                 buttons: [{
-                    'text': _t('Save'),
+                    'text': 'Save',
                     'oe_link_class': 'oe_highlight',
                     'click': function() {
                         var storage = $(this).find('#storage').val();
