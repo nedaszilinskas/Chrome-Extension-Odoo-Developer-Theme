@@ -8,9 +8,6 @@
         "matches": [
             "*://*/web*"
         ],
-        "css": [
-            "src/css/base.css"
-        ],
         "js": [
             "src/js/base.js"
         ],
@@ -19,6 +16,7 @@
     }],
     "web_accessible_resources": [
         "src/js/odoo.js",
+        "src/css/dark.css",
         "src/xml/base.xml"
     ]
 }

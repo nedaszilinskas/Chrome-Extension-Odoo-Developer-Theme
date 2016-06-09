@@ -48,7 +48,7 @@
                     'login': this.login,
                     'password': this.password
                 }).done(function() {
-                    document.location.href = '/web';
+                    document.location.reload();
                 });
             },
             'click span.removeswitchuser': function() {
@@ -94,6 +94,48 @@
                     }
                 }]
             }, form).open();
+        },
+        on_menu_clear_switchusers: function() {
+            if (confirm("Are you sure you want to clear all users?")) {
+                var self = this;
+                localStorage.setItem('accounts', JSON.stringify([]));
+                self.$el.find('.dropdown-menu .switch_user').remove();
+            }
+        },
+        on_menu_open_storage: function() {
+            var self = this;
+            var accounts = JSON.stringify(get_local_accounts(), null, 4);
+            var form = $(QWeb.render("UserMenu.UsersStorage"));
+            form.find('#storage').val(accounts);
+            var modal = new openerp.web.Dialog(this, {
+                size: 'medium',
+                dialogClass: 'oe_act_window',
+                title: _t("Users Storage"),
+                buttons: [{
+                    'text': _t('Save'),
+                    'oe_link_class': 'oe_highlight',
+                    'click': function() {
+                        var storage = $(this).find('#storage').val();
+                        try {
+                            var data = JSON.stringify(JSON.parse(storage));
+                            localStorage.setItem('accounts', data);
+                            modal.close();
+                            document.location.reload();
+                        } catch (e) {
+                            alert(e);
+                        }
+                    }
+                }]
+            }, form).open();
+        },
+        on_menu_set_theme: function(li) {
+            var theme = li.attr('data-theme');
+            if (theme) {
+                localStorage.setItem('theme', theme);
+            } else {
+                localStorage.setItem('theme', false);
+            }
+            document.location.reload();
         },
     });
 
