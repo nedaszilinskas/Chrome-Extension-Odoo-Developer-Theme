@@ -1,6 +1,6 @@
 {
     "name": "Odoo Developer",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "manifest_version": 2,
     "short_name": "Tools & helpers for Odoo developers",
     "description": "Tools & helpers for Odoo developers",
