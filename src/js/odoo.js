@@ -18,6 +18,10 @@
             this.init_user_switch_menu();
         },
         init_dev_menu: function() {
+            var self = this;
+            self.switch_user_menu = new openerp.web.SwitchUserMenu(self);
+            self.switch_user_menu.appendTo(window.$('.oe_systray'));
+
             var $menu = $(QWeb.render('OdooDevTheme.systray'));
             $menu.prependTo(window.$('.oe_systray'));
             $menu.find('a.oe_activate_debug_mode').on('click', function(e) {
@@ -29,7 +33,7 @@
             var accounts = get_local_accounts();
             for (var i in accounts) {
                 var user_li = new openerp.web.UserMenuSwitchUser(accounts[i].login, accounts[i].password);
-                user_li.appendTo(this.$el.find('.oe_user_menu_placeholder ul.dropdown-menu'));
+                user_li.appendTo(this.$el.find('.quick_switch_user ul.dropdown-menu'));
             }
         }
     });
@@ -66,7 +70,24 @@
         }
     });
 
-    openerp.web.UserMenu.include({
+    openerp.web.SwitchUserMenu = openerp.web.Widget.extend({
+        template: "OdooDevTheme.SwitchUserMenu",
+        init: function(parent) {
+            this._super(parent);
+            this.update_promise = $.Deferred().resolve();
+        },
+        start: function() {
+            var self = this;
+            this._super.apply(this, arguments);
+            this.$el.on('click', '.dropdown-menu li a[data-menu]', function(ev) {
+                ev.preventDefault();
+                var f = self['on_menu_' + $(this).data('menu')];
+                if (f) {
+                    f($(this));
+                }
+            });
+            this.$el.parent().show()
+        },
         on_menu_add_switchuser: function() {
             var self = this;
             var form = $(QWeb.render("UserMenu.AddSwitchUser"));

@@ -2,23 +2,30 @@
 
 <templates id="template" xml:space="preserve">
 	<t t-name="OdooDevTheme.systray">
-	    <li class="oe_topbar_item" title="Debug">
-	        <a href="#" class="oe_activate_debug_mode"><i class="fa fa-bug" style="color:#7C7BAD;"></i></a>
-	    </li>
-	</t>
+        <li class="oe_topbar_item" title="Debug">
+            <a href="#" class="oe_activate_debug_mode"><i class="fa fa-bug" style="color:#7C7BAD;"></i></a>
+        </li>
+    </t>
 
-	<t t-extend="UserMenu">
-        <t t-jquery="ul[class='dropdown-menu']" t-operation="append">
-            <li class="divider"></li>
-            <li><a href="#" data-menu="set_theme">Default Theme</a></li>
-            <li><a href="#" data-menu="set_theme" data-theme="dark">Dark Theme</a></li>
-            <li class="divider"></li>
-            <li><a href="#" data-menu="add_switchuser">Add Quick Switch User</a></li>
-            <li><a href="#" data-menu="clear_switchusers">Clear Users</a></li>
-            <li><a href="#" data-menu="open_storage">Open Storage</a></li>
-            <li class="divider"></li>
-        </t>
-	</t>
+    <t t-name="OdooDevTheme.SwitchUserMenu">
+        <li class="dropdown quick_switch_user">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                User 
+                <span class="oe_topbar_name"/> <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="#" data-menu="set_theme">Default Theme</a></li>
+                <li><a href="#" data-menu="set_theme" data-theme="dark">Dark Theme</a></li>
+                <li class="divider"></li>
+                <li>
+                    <a href="#" data-menu="add_switchuser">Add User</a>
+                    <a href="#" data-menu="open_storage">Open Storage</a>
+                </li>
+                <li><a href="#" data-menu="clear_switchusers">Clear Users</a></li>
+                <li class="divider"></li>
+            </ul>
+        </li>
+    </t>
 
 	<t t-name="UserMenu.SwitchUser">
 		<li class="switch_user">
@@ -31,7 +38,7 @@
 
 	<t t-name="UserMenu.AddSwitchUser">
         <div class="oe_formview oe_view oe_form_editable">
-	        <div class="oe_form_container" style="padding-left:15px;padding-right:15px;">
+	        <div class="oe_form_container">
 		        <div class="oe_form">
 			        <div class="oe_form_sheetbg">
 			        	<table border="0" cellpadding="0" cellspacing="0" class="oe_form_group">
@@ -70,7 +77,7 @@
 
 	<t t-name="UserMenu.UsersStorage">
         <div class="oe_formview oe_view oe_form_editable">
-	        <div class="oe_form_container" style="padding-left:15px;padding-right:15px;">
+	        <div class="oe_form_container">
 		        <div class="oe_form">
 			        <div class="oe_form_sheetbg">
 			        	<div class="oe_form_field oe_form_field_text">
