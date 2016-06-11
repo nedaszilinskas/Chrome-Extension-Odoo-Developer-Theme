@@ -154,7 +154,7 @@
             if (theme) {
                 localStorage.setItem('theme', theme);
             } else {
-                localStorage.setItem('theme', false);
+                localStorage.removeItem('theme');
             }
             document.location.reload();
         },
