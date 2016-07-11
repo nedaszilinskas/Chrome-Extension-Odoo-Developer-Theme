@@ -13,7 +13,7 @@
                 User 
                 <span class="oe_topbar_name"/> <b class="caret"></b>
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" style="height:auto;max-height:600px;overflow-x:hidden;">
                 <li><a href="#" data-menu="set_theme">Default Theme</a></li>
                 <li><a href="#" data-menu="set_theme" data-theme="dark">Dark Theme</a></li>
                 <li class="divider"></li>
